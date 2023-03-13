@@ -1,0 +1,38 @@
+.heading{
+    align-items: flex-end;
+    padding: 25px;
+    margin-left: 200px ;
+    margin-right: 350px;
+    box-shadow: inset;
+    background-color: blanchedalmond;
+}
+
+.heading:hover{
+    
+}
+
+.data{
+    display: flex;
+    width: 175vb;
+    background-color: blanchedalmond;
+}
+
+.dp{
+    height: 150px;
+    width: 200px;
+}
+
+.name{
+
+
+    font-size: 25px;
+    margin-left: 0px;
+}
+
+.desg{
+
+}
+
+.bttn{
+    
+}
