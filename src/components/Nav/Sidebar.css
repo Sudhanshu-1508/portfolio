@@ -18,9 +18,10 @@
     display: block;
   }
   .sidenav h2 {
+  
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     color: #818181;
     display: block;
   }
@@ -31,8 +32,14 @@
 
   .icons{
     list-style: none;
+    margin-top: 40px;
+    margin-left: -35px;
   }
 
   .icons li{
     display: inline-block;
+  }
+
+  .links{
+    margin-top: 50px;
   }

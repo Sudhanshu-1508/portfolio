@@ -10,6 +10,7 @@ function Head() {
     }
 
     const img = require('./Img/DP.jpeg');
+    
   return (
     <div className="heading">
       <p className="name">Sudhanshu Kulkarni</p><br></br>

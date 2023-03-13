@@ -1,12 +1,32 @@
-.container {
-    display: flex;
-    justify-content: space-between; /* align the boxes with equal space between them */
-  }
+
   
   .box {
-    width: 30%; /* adjust the width as needed */
-    background-color: #ccc;
-    padding: 10px;
-    box-sizing: border-box; /* include padding in the width */
+ 
+  background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
   }
   
+  .container {
+
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .data{
+    font-size: 15px;
+  }
+    
+    .container1 {
+      text-align: center;
+      justify-content: center;
+     
+      display: flex;
+      flex-wrap: nowrap;
+    }
