@@ -5,10 +5,50 @@
 }
 
 .grid {
-    margin-left: 70px;
-    display: grid;
-    width: 90%;
-    box-shadow: inset;
-    outline-style: groove;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 100px;
+    gap: 100px; 
+}
+
+.Projects-container{
+    margin-top: 80px;
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 100px;
+    gap: 100px;
+}
+
+.name1 {
+    margin-top: 10px;
+}
+
+.h4 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.ProjectCard{
+    
+    display: flex;
+    align-items: center;
+    grid-gap: 50px;
+    gap: 50px;
+    height: 250px;
+    box-shadow: 0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3), inset 0 -2px 6px 0 rgba(10,37,64,.35);
+}
+.description {
+    margin-left: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+    gap: 4px;
 }

@@ -13,13 +13,13 @@ function Skills() {
     <div className='skillset'>
   <h2 class='title'>Skills</h2>
   <div class='container'>
-    <div class='box'><AiFillHtml5/><span class='data'>HTML</span></div>
+    <div class='box'><div><AiFillHtml5 /></div><div><span class='data'>HTML</span></div></div>
     <div class='box'><IoLogoCss3/><span class='data'>CSS</span></div>
     <div class='box'><IoLogoJavascript/><span class='data'>Javascipt</span></div>
   </div>
 
   <div class='container'>
-    <div class='box'><AiOutlineConsoleSql/><br/><span class='data'>SQL</span></div>
+    <div class='box'><AiOutlineConsoleSql/><span class='data'>SQL</span></div>
     <div class='box'><AiFillGithub/><span class='data'>GitHub</span></div>
     <div class='box'><BiGitBranch/><span class='data'>SQL</span></div>
   </div>

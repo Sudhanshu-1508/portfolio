@@ -9,14 +9,14 @@
     margin-left: 200px ;
     margin-right: 350px;
     box-shadow: inset;
-    
+    overflow: hidden;
 }
 
 .heading:hover{
     
 }
 
-.data{
+.data1{
     font-family: 'Nunito Sans', sans-serif;
     text-align: justify;
     justify-content: left;

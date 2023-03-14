@@ -1,15 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
 .skillset{
   position: absolute;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  height: 25vh;
   background-color: #f1f1f1;
-  width: 100px;
+  width: 20vw;
   margin: 10px;
   text-align: center;
   font-size: 30px;
+  box-shadow: 0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3), inset 0 -2px 6px 0 rgba(10,37,64,.35);
+}
+
+.title{
+  
+ 
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 35px;
+ 
 }
 
 .container {
@@ -20,15 +41,11 @@
   flex-wrap: nowrap;
 }
 
-.title {
-  /* add any title styles you want */
-}
 
 .data {
-  font-size: 15px;
+  font-size: 18px;
   /* position the span element under the logo */
   position: relative;
-  top: -20px;
-  margin-top: 15px;
-  margin-left: 35px;
+  left: 0px;
+  margin-top: 10px;
 }
