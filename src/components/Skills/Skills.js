@@ -1,29 +1,37 @@
 import React from 'react'
 import {AiFillHtml5, AiOutlineConsoleSql, AiFillGithub} from 'react-icons/ai';
-import {IoLogoCss3, IoLogoJavascript, IoLogoReact} from 'react-icons/io';
+import {IoLogoCss3, IoLogoJavascript, } from 'react-icons/io';
 import {BiGitBranch} from 'react-icons/bi';
+import {DiReact} from 'react-icons/di';
+import {FaJava} from 'react-icons/fa'
+import {TbBrandCpp} from 'react-icons/tb'
 import './Skills.css'
 
 
 function Skills() {
   return (
-    <>
-    <h2>Skills</h2>
-    <div className='container'>
-        <div className='box'><AiFillHtml5/></div>
-        <div className='box'><IoLogoCss3/></div>
-        <div className='box'><IoLogoJavascript/></div>
+    <div>
+  <h2 class='title'>Skills</h2>
+  <div class='container'>
+    <div class='box'><AiFillHtml5/><span class='data'>HTML</span></div>
+    <div class='box'><IoLogoCss3/><span class='data'>CSS</span></div>
+    <div class='box'><IoLogoJavascript/><span class='data'>Javascipt</span></div>
+  </div>
 
-       
-    </div>
-    <div className='container1'>
+  <div class='container'>
+    <div class='box'><AiOutlineConsoleSql/><br/><span class='data'>SQL</span></div>
+    <div class='box'><AiFillGithub/><span class='data'>GitHub</span></div>
+    <div class='box'><BiGitBranch/><span class='data'>SQL</span></div>
+  </div>
+
+  <div class='container'>
+    <div class='box'><DiReact/><span class='data'>React</span></div>
+    <div class='box'><FaJava/><span class='data'>Java</span></div>
+    <div class='box'><TbBrandCpp/><span class='data'>C++</span></div>
+  </div>
+</div>
 
 
-        <div className='box'><AiOutlineConsoleSql/><br/><h6 className='data'>SQL</h6></div>
-        <div className='box'><AiFillGithub/></div>
-        <div className='box'><BiGitBranch/></div>
-    </div>
-    </>
   )
 }
 
