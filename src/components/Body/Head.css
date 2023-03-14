@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
 .heading{
     width: 100%;
     align-items: flex-end;
@@ -14,15 +17,17 @@
 }
 
 .data{
+    font-family: 'Nunito Sans', sans-serif;
     text-align: justify;
     justify-content: left;
     display: flex;
     width: 175vb;
+    margin-left: 0px;
     
 }
 
 .dp{
-    border: #3e8e41;
+
     box-shadow: 3px 3px #888888;
     border-radius: 10px;
     margin-top: -80px;
@@ -33,20 +38,25 @@
 
 .name{
     margin-top: 21px;
+    margin-bottom: 25px;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    font-size: 40px;
+    font-size: 45px;
     justify-content: left;
 }
 
 .desg{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
     margin-top: -35px;
+    margin-bottom: 45px;
     text-align: left;
-    font-size: 19px;
+    font-size: 25px;
     justify-content: left;
 }
 
 .bttn{
+    border-radius: 4px;
     background-color:#111;
   border: none;
   margin-left: -1350px;
@@ -60,7 +70,7 @@
 }
 
 .bttn:hover {
-    background-color: #f1f1f1;
+    background-color: #312f2f;
 }
 
 .bttn:active {

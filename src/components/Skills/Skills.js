@@ -10,7 +10,7 @@ import './Skills.css'
 
 function Skills() {
   return (
-    <div>
+    <div className='skillset'>
   <h2 class='title'>Skills</h2>
   <div class='container'>
     <div class='box'><AiFillHtml5/><span class='data'>HTML</span></div>

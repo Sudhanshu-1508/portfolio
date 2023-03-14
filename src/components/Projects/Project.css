@@ -1,0 +1,14 @@
+.main {
+    display: grid;
+    margin-bottom: 100px;
+    margin-left: 150px;
+}
+
+.grid {
+    margin-left: 70px;
+    display: grid;
+    width: 90%;
+    box-shadow: inset;
+    outline-style: groove;
+    margin-bottom: 30px;
+}

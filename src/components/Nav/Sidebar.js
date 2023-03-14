@@ -21,10 +21,11 @@ function Sidebar() {
 
           
             
-          
+          <Link to = '/head' className='links'>Home</Link>
           <Link to='/skills' className='links' >Skills </Link>
+          <Link to='/project' className='links' >Projects</Link>
           <Link to='/contact' className='links' >Contact</Link>
-          <a className='links' href="#">Link 4</a>
+
           
 {/** 
           <Link to='' className='links'>About</Link>
@@ -45,7 +46,7 @@ function Sidebar() {
         </div>
         
        
-      )
+      ) 
 }
 
 export default Sidebar
