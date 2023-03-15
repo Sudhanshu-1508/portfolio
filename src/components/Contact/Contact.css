@@ -1,60 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
+.contact {
+  margin-left: 85px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.18rem;
+  text-align: center;
+  margin-top: 2rem;
+}
 
-.contact-section {
-    width: 100%;
-    color: #818181;
-    margin: 0 auto;
-    padding: 50px 0;
-    text-align: center;
-    background-color: #111;
-  }
-  
+.contact-top {
+  height: 2px;
+  background-color: #ccc;
+  margin-top: 2rem;
+}
 
-  .contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
-  }
-  
-  .contact-section label {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    
-  }
-  
-  .contact-section input,
-  .contact-section textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 50%;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    color: #818181;
-  }
-  
-  .contact-section textarea {
-    height: 200px;
-  }
-  
-  .contact-section button {
-    padding: 10px 20px;
-    background-color:#898484;
-    color: #050505;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .contact-section button:hover {
-    background-color: #e7eaee;
-  }
-  
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  margin-left: 100px;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #111;
+  box-shadow: 0 0 0 0.2rem #8d2c2c(0, 123, 255, 0.25);
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+.btn {
+  margin-left: 100px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #111;
+  color: #818181;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #312f2f;
+}
+
+.contact-bottom {
+  color: black;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.contact-bottom div {
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-bottom svg {
+  margin-right: 0.5rem;
+}

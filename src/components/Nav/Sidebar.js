@@ -7,46 +7,29 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Head from '../Body/Head';
+import { useState } from 'react';
 
 function Sidebar() {
+  const [isActive, setIsActive] = useState(false);
 
-  function handleClick1 () {
-    window.open('https://github.com/Sudhanshu-1508')
+  function toggleSidebar() {
+    setIsActive(!isActive);
   }
-    return (
 
-      
-        <div className="sidenav">
-          <h2>Portfolio</h2>
-
-          
-            
-          <Link to = '/head' className='links'>Home</Link>
-          <Link to='/skills' className='links' >Skills </Link>
-          <Link to='/project' className='links' >Projects</Link>
-          <Link to='/contact' className='links' >Contact</Link>
-
-          
-{/** 
-          <Link to='' className='links'>About</Link>
-          <Link to='/skills' className='links'>Skills</Link>
-          <Link to='/projects' className='links'>Projects</Link>
-          <Link to='contact' className='links'>Contact</Link>
-
-     
-          <Route path='/skills' Component={Skills} />
-          
-          <Route path='/contact' Component={Contact} />
-          </Router>  
-          */}
-          <ul className='icons'>
-          <li><a href='https://github.com/Sudhanshu-1508'><FaGithub /></a></li>
-          <li><a href='https://www.linkedin.com/in/sudhanshu-kulkarni-72330318b/'><FaLinkedinIn /></a></li>
-          </ul>
-        </div>
-        
-       
-      ) 
+  return (
+    <div className={`sidenav ${isActive ? "sidebar-active" : "sidebar-inactive"}`}>
+      <div className="toggle" onClick={toggleSidebar}>Toggle</div>
+      <h2>Portfolio</h2>
+      <Link to="/" className="links">Home</Link>
+      <Link to="/skills" className="links">Skills</Link>
+      <Link to="/project" className="links">Projects</Link>
+      <Link to="/contact" className="links">Contact</Link>
+      <ul className="icons">
+        <li><a href="https://github.com/Sudhanshu-1508"><FaGithub /></a></li>
+        <li><a href="https://www.linkedin.com/in/sudhanshu-kulkarni-72330318b/"><FaLinkedinIn /></a></li>
+      </ul>
+    </div>
+  )
 }
 
-export default Sidebar
+export default Sidebar;

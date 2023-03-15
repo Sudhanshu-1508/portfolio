@@ -15,7 +15,7 @@ function Head() {
     <div className="heading">
       <p className="name">Sudhanshu Kulkarni</p>
       <br></br>
-      <p className="desg">Software Developer</p>
+      <div><p className="desg">Software Developer</p></div>
       <p className="data1">
         I am an Aspiring Full-Stack Software Engineer with a keen interest in
         building robust and user-focused applications with a strong emphasis on
@@ -26,7 +26,7 @@ function Head() {
         enjoy traveling and watching sci-fi movies!
         <img src={img} alt="Dp" className="dp"></img>
       </p>
-      <p className="desg">About</p>
+      <div className="desg1"><p className="desg1">About</p></div>
       <p className="data1">
         During my college days, I got introduced to coding in C++ and Java which
         intrigued me, and shortly after, through college placements, I was

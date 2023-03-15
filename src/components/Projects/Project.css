@@ -1,54 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+.Project {
+  font-size: 35px;
+  margin-left: 150px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .main {
-    display: grid;
-    margin-bottom: 100px;
-    margin-left: 150px;
+  display: grid;
+  margin-bottom: 100px;
+  margin-left: 150px;
 }
 
 .grid {
-    margin-top: 80px;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 100px;
-    gap: 100px; 
+  margin-top: 80px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 100px;
+  gap: 100px;
 }
 
 .Projects-container{
-    margin-top: 80px;
-    width: 100%;
-    height:fit-content;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 100px;
-    gap: 100px;
+  margin-left: 320px;
+  margin-top: 80px;
+  width: 70%;
+  min-height:fit-content;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 100px;
+  gap: 100px;
 }
 
 .name1 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .h4 {
-    margin-bottom: 0.5rem;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.2;
-    color: inherit;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
 }
+
 .ProjectCard{
-    
-    display: flex;
-    align-items: center;
-    grid-gap: 50px;
-    gap: 50px;
-    height: 250px;
-    box-shadow: 0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3), inset 0 -2px 6px 0 rgba(10,37,64,.35);
+  display: flex;
+  align-items: center;
+  grid-gap: 50px;
+  gap: 50px;
+  min-height: 250px;
+  box-shadow: 0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3), inset 0 -2px 6px 0 rgba(10,37,64,.35);
 }
+
 .description {
-    margin-left: 100px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 4px;
-    gap: 4px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4px;
+  gap: 4px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .Projects-container{
+    margin-left: 10%;
+    margin-top: 80px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Project {
+    font-size: 28px;
+  }
+  
+  .main {
+    margin-left: 10%;
+  }
+  
+  .Projects-container{
+    margin-left: 20%;
+    margin-top: 80px;
+    width: 80%;
+  }
+  
+  .ProjectCard{
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Project {
+    font-size: 24px;
+  }
+  
+  .main {
+    margin-left: 5%;
+  }
+  .navbar{
+    width: 100px;
+  }
+  .Projects-container{
+    margin-left: 25%;
+    margin-top: 50px;
+    width: 90%;
+  }
+  
+  .ProjectCard{
+    flex-direction: column;
+    text-align: center;
+    min-height: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .description {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .Project {
+      font-size: 24px;
+    }
+    
+    .main {
+      margin-left: 5%;
+    }
+    .navbar{
+      width: 100px;
+    }
+    .Projects-container{
+      margin-left: 30%;
+      margin-top: 50px;
+      width: 90%;
+    }
+    
+    .ProjectCard{
+      flex-direction: column;
+      text-align: center;
+      min-height: ;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .description {
+        min-height: 30%;
+      margin-top: 20px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+

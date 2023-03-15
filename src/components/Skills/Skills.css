@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
+.body{
+  overflow-x: hidden;
+}
 .skillset{
+
   position: absolute;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+ 
 }
 
 .box {
@@ -34,18 +39,78 @@
 }
 
 .container {
+  margin-left: 100px;
   padding: 15px;
   text-align: center;
   justify-content: center;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 
 .data {
   font-size: 18px;
-  /* position the span element under the logo */
   position: relative;
   left: 0px;
   margin-top: 10px;
+}
+
+
+@media (max-width: 650px){
+  .sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidenav h2 {
+  
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  .links{
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    height: 15vh;
+    background-color: #f1f1f1;
+    width: 10vw;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3), inset 0 -2px 6px 0 rgba(10,37,64,.35);
+  }
+
+  .data {
+    font-size: 12px;
+    position: relative;
+    left: 0px;
+    margin-top: 10px;
+  }
+
+  .skillset{
+    margin-left: 500px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: 100px;
+  }
+  
 }
