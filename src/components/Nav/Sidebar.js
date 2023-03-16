@@ -7,18 +7,15 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Head from '../Body/Head';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { NavContext } from '../../App';
 
 function Sidebar() {
-  const [isActive, setIsActive] = useState(false);
 
-  function toggleSidebar() {
-    setIsActive(!isActive);
-  }
-
+  const isActive = useContext(NavContext);
   return (
-    <div className={`sidenav ${isActive ? "sidebar-active" : "sidebar-inactive"}`}>
-      <div className="toggle" onClick={toggleSidebar}>Toggle</div>
+    <div className={`sidenav ${isActive ? "sidebar-inactive" : "sidebar-active"}`}>
+      
       <h2>Portfolio</h2>
       <Link to="/" className="links">Home</Link>
       <Link to="/skills" className="links">Skills</Link>

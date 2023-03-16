@@ -2,10 +2,12 @@ import React from 'react';
 import './Contact.css';
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai';
 import { ImLocation2 } from 'react-icons/im';
+import Toggle from '../Toggle/Toggle';
 
 function Contact() {
   return (
     <>
+   
       <h2 className='contact'>Contact</h2>
       
       <form className='contact-form'>
